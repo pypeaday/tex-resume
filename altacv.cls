@@ -247,6 +247,7 @@
 
 \AtBeginDocument{%
   \pagestyle{empty}
+%  \fancyhf{}
   \color{body}
   \raggedright
 }
