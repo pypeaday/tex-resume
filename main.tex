@@ -1,0 +1,201 @@
+%%%%%%%%%%%%%%%%%
+% This is an example CV created using altacv.cls (v1.1.4, 27 July 2018) written by
+% LianTze Lim (liantze@gmail.com), based on the
+% Cv created by BusinessInsider at http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/?r=US&IR=T
+%
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% If you want to use \orcid or the
+%% academicons icons, add "academicons"
+%% to the \documentclass options.
+%% Then compile with XeLaTeX or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[10pt,a4paper]{altacv}
+
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages.
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols.
+%% When using the "academicons" option,
+%% Compile with LuaLaTeX for best results. If you
+%% want to use XeLaTeX, you may need to install
+%% Academicons.ttf in your operating system's font %% folder.
+
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1cm,bottom=1cm}
+
+% Change the font if you want to.
+
+% If using pdflatex:
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[default]{lato}
+
+% If using xelatex or lualatex:
+% \setmainfont{Lato}
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{008080}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{Muhammad Majeed}
+\tagline{Senior Engineer}
+% Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
+\photo{2.5cm}{3}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \email{majeed\_100@outlook.com}
+  \phone{+923338075529/923224647028}
+  \location{Lahore , Pakistan}
+ % \homepage{https://yogs447.blogspot.com/}
+  \linebreak
+  \twitter{@Majeed\_here}
+  \linkedin{www.linkedin.com/in/muhammad-majeed-82475030/}
+%   \github{github.com/mmayer} % I'm just making this up though.
+%   \orcid{orcid.org/0000-0000-0000-0000} % Obviously making this up too. If you want to use this field (and also other academicons symbols), add "academicons" option to \documentclass{altacv}
+}
+
+%% Make the header extend all the way to the right, if you want.
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+\AtBeginEnvironment{itemize}{\small}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+\cvsection[page1sidebar]{Education}
+\cvevent{MS Nuclear Engineering} {Pakistan Institute of Engineering and Applied Sciences}{2013 - 2015}{Islamabad, Pakistan} 
+\textsc{CGPA}: 3.25/4.0
+\\
+\cvevent{BSc Electrical Engineering}{University of Engineering \& Technology Lahore}{2009 - 2013}{Lahore, Pakistan}
+\textsc{CGPA}: 3.072/4.0
+\\
+\cvevent{Diploma of Associate Engineering in Electrical}{Lahore Polytechnic Institute Lahore, Pakistan}{2004-2007}{Lahore , Pakistan}
+\textsc{Percentage}: 78.98\%
+
+% \divider
+
+% \cvevent{Product Engineer}{Google}{23 June 1999 -- 2001}{Palo Alto, CA}
+
+% \begin{itemize}
+% \item Joined the company as employe \#20 and female employee \#1
+% \item Developed targeted advertisement in order to use user's search queries and show them related ads
+% \end{itemize}
+
+
+\cvsection{University Projects }
+\begin{itemize}
+\item Small Hydro Power Plant.
+\item Development of digital game by using gate logic.
+\item Audio Amplifier Using Operational amplifier.
+\item Moving message display using AT89C51 (micro-controller) by the usage of assembly language code.
+\item Automatic water level detection and controller Using AT89C51 by C language code.
+\item DC motor direction Control using MOSFET.
+\item Development of variable frequency inverter by using MOSFETs.
+\end{itemize}
+
+\cvsection{Dissertation Work}
+\cvevent{BSc Thesis}{Home appliances control through GSM and Smart metering system}{}{}
+\begin{itemize}
+\item PIC micro-controller based application.
+\item Designed the circuit and control logic for said purpose.
+\item Developed C language Code for control logic.
+\item Designed and developed the control circuit and its PCB. 
+\end{itemize}
+
+\cvevent{MS Thesis}{Development of fluid theory based code for HBr/Cl2/Ar plasma discharge}{}{}
+\begin{itemize}
+\item Designed a self sustained fluid model for plasma discharge.
+\item Identified the important reactions of this plasma.
+\item 22 species (positive, negative, neutral and excited) are incorporated in it.
+\item Boltzmann Equation solver BOLSIG+ used to calculate rates of electron impact reactions.
+\item Developed C language Code for the model in LINUX based OS.
+\item Simulations of the code has been carried out by varying different parameters.
+\item Result of important species is analysed and drawn by ORIGIN.
+\item \textbf{Research paper of this work is under review in "Physics of Plasmas"}.
+%\divider
+%\divider
+%\divider
+\end{itemize}
+
+
+\cvsection[page2sidebar]{Work Experience}
+\cvevent{Senior Engineer}{CHASHMA CENTER OF NUCLEAR
+TRAINING, PAEC}{Nov 2015 - Present}{Chashma, Pakistan}
+\begin{itemize}
+\item Training of newly inducted officers and Staff.
+\item Impart training to officers on basic and advanced features of MS-Excel.
+\item Worked in the team to up-grade the I/O system (EPICS based) of Simulator.
+\item Developed the database for the newly I/O system installed
+\item Ensuring quality control requirements and safety measures at job site.
+\end{itemize}
+
+
+
+\cvevent{Internee Engineer}{Pak Elektron Limited}{July 2012 - August 2012}{Lahore, Pakistan}
+\begin{itemize}
+\item Coordinated with lead engineer to tackle the problems down in Switch-gear Department.
+\item Attended meeting with the engineering team to optimize the production.
+\item Visited work area on daily basis to monitor the work.
+\end{itemize}
+
+
+\cvsection{Certificates}
+
+\begin{itemize}
+\item Presented my research work in Symposium on "\textbf{Advances in Nuclear Engineering}" at Pakistan Institute of Engineering \& Applied Sciences, Islamabad, Pakistan.
+\item Participated in "\textbf{Workshop on Plasma Physics-2015}" at National Centre for Physics, Islamabad, Pakistan.
+\item Attended and successfully completed a four weeks course on "\textbf{Spoken English}" at University of Engineering \& Technology Lahore, Pakistan.
+\item Participated in "\textbf{Student Professional Awareness Conference}" at University of Engineering \& Technology Lahore, Pakistan.
+\end{itemize}
+
+
+
+
+\cvsection{Hobbies}
+
+\cvachievement{\faNewspaperO}{Reading newspaper}{Have a keen eye on current affairs}
+
+%\divider
+\cvachievement{\faMusic
+}{Music Addict}{Listen quality music of every genre}
+
+%\divider
+\cvachievement{\faConnectdevelop}{Tracking}{Going for mount climbing on every single year}
+%\divider
+\cvachievement{\faCar}{Travelling}{Always fond of traveling to exotic places}
+
+\clearpage
+
+
+\end{document}
